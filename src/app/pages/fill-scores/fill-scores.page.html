@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>fill-scores</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <style>
+    .top-bottom-borders {
+      border-top: 15px solid #555;
+      border-bottom: 15px solid #555;
+      background-color: #555;
+      text-align: center;
+      line-height: 20px;
+      padding: 5px;  
+      color: white;
+    } 
+    .triangle-left {
+      height: 50px;
+      border-top: 30px solid transparent;
+      border-right: 30px solid #555;
+      border-bottom: 30px solid transparent;
+    }
+    .triangle-right {
+      height: 50px;
+      border-top: 30px solid transparent;
+      border-left: 30px solid #555;
+      border-bottom: 30px solid transparent;
+    }    
+    .inline 
+    {
+        display:inline-block;
+    }
+    </style>
+    <div style="width: 130px; height: 60px; display: block;">
+      <div class="inline triangle-left" style="position: absolute; left: 0px"></div>
+      <div class="inline top-bottom-borders" style="position: absolute; left: 30px; height: 60px; width: 70px; ">AAA</div>
+      <div class="inline triangle-right" style="position: absolute; left: 100px;"></div>        
+  </div>
+</ion-content>

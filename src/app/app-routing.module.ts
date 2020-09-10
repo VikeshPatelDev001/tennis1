@@ -32,7 +32,16 @@ const routes: Routes = [
     path: 'tutorial',
     loadChildren: () => import('./pages/tutorial/tutorial.module').then(m => m.TutorialModule),
     canLoad: [CheckTutorial]
+  },
+  {
+    path: 'fill-scores',
+    loadChildren: () => import('./pages/fill-scores/fill-scores.module').then( m => m.FillScoresPageModule)
+  },
+  {
+    path: 'demo-lines',
+    loadChildren: () => import('./pages/demo-lines/demo-lines.module').then( m => m.DemoLinesPageModule)
   }
+
 ];
 
 @NgModule({

@@ -1,0 +1,48 @@
+<script>
+    
+   
+   
+  
+  //initLoad();
+
+</script>
+<ion-header>
+  <ion-toolbar>
+    <ion-title>demo-lines</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <style>
+    #canvas {
+        position:absolute;
+        border:1px solid red;
+        width:100%;
+        height:100%;
+    }
+    .draggable {
+        width:50px;
+        height:30px;
+        background:skyblue;
+        border:1px solid green;
+    }
+    .right {
+        margin-left:100px;
+        background:salmon;
+    }
+    #wrap2 {
+        margin-top:-95px;
+    }    
+  </style>
+  <canvas id="canvas" width=300 height=300></canvas>
+  <div>
+      <div id="0" class="draggable">0</div>
+      <div id="1" class="draggable">1</div>
+      <div id="2" class="draggable">2</div>
+  </div>
+  <div id="wrap2">
+      <div id="0r" class="draggable right">0</div>
+      <div id="1r" class="draggable right">1</div>
+      <div id="2r" class="draggable right">2</div>
+  </div>
+</ion-content>

@@ -104,6 +104,23 @@
             </ion-item>
           </ion-menu-toggle>
         </ion-list>
+
+        <ion-list lines="none">
+          <ion-list-header>
+            Scores Menu
+          </ion-list-header>
+          <ion-menu-toggle autoHide="false">
+            <ion-item button (click)="openFillScores()" detail="false">
+              <ion-icon slot="start" name="hammer"></ion-icon>
+              <ion-label>Fill Scores</ion-label>
+            </ion-item>
+            <ion-item button (click)="openDemoLines()" detail="false">
+              <ion-icon slot="start" name="hammer"></ion-icon>
+              <ion-label>Demo Lines</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+
       </ion-content>
     </ion-menu>
 

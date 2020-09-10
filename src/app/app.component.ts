@@ -38,7 +38,7 @@ export class AppComponent implements OnInit {
       title: 'About',
       url: '/app/tabs/about',
       icon: 'information-circle'
-    }
+    },
   ];
   loggedIn = false;
   dark = false;
@@ -126,4 +126,17 @@ export class AppComponent implements OnInit {
     this.storage.set('ion_did_tutorial', false);
     this.router.navigateByUrl('/tutorial');
   }
+
+  openFillScores() {
+    this.menu.enable(true);
+    //this.storage.set('ion_did_tutorial', false);
+    this.router.navigateByUrl('/fill-scores');
+  }
+  
+  openDemoLines() {
+    this.menu.enable(true);
+    //this.storage.set('ion_did_tutorial', false);
+    this.router.navigateByUrl('/demo-lines');
+  }
+
 }
