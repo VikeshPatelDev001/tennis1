@@ -136,7 +136,7 @@ export class AppComponent implements OnInit {
   openDemoLines() {
     this.menu.enable(true);
     //this.storage.set('ion_did_tutorial', false);
-    this.router.navigateByUrl('/demo-lines');
+    this.router.navigateByUrl('/demo-lines-new');
   }
 
 }

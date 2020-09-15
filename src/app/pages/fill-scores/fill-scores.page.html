@@ -1,40 +1,51 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>fill-scores</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
   <style>
     .top-bottom-borders {
-      border-top: 15px solid #555;
-      border-bottom: 15px solid #555;
-      background-color: #555;
+      position: absolute; 
+      border-top: 15px solid white;
+      border-bottom: 15px solid white;
+      background-color: white;
       text-align: center;
       line-height: 20px;
       padding: 5px;  
-      color: white;
+      color: #063a53;
+      left: 10px; 
+      width: 60px;
+      height: 40px; 
     } 
     .triangle-left {
-      height: 50px;
-      border-top: 30px solid transparent;
-      border-right: 30px solid #555;
-      border-bottom: 30px solid transparent;
+      position: absolute;  
+      border-top: 20px solid transparent;
+      border-right: 10px solid white;
+      border-bottom: 20px solid transparent;
+      left: 0px;
+      height: 40px;
     }
     .triangle-right {
-      height: 50px;
-      border-top: 30px solid transparent;
-      border-left: 30px solid #555;
-      border-bottom: 30px solid transparent;
+      position: absolute;  
+      border-top: 20px solid transparent;
+      border-left: 10px solid white;
+      border-bottom: 20px solid transparent;
+      left: 70px;
+      height: 40px;
     }    
     .inline 
     {
         display:inline-block;
     }
     </style>
-    <div style="width: 130px; height: 60px; display: block;">
-      <div class="inline triangle-left" style="position: absolute; left: 0px"></div>
-      <div class="inline top-bottom-borders" style="position: absolute; left: 30px; height: 60px; width: 70px; ">AAA</div>
-      <div class="inline triangle-right" style="position: absolute; left: 100px;"></div>        
-  </div>
-</ion-content>
+    <div>
+      <div class="inline triangle-left"></div>              
+      <div class="inline top-bottom-borders" style="position: absolute; padding: 0px; margin: 0px;">
+        <div style="position: absolute; border: none; padding: 0px; margin: 0px; height: 40px; top: -7px; ">
+          <div style="position: absolute; border: none; font-style: italic; font-size: 24px; font-family: Dosis; font-weight: 700; color: #295168; letter-spacing: 3px; height: 20px;  text-align: center; width: 60px; ">
+            {{this.value}}
+          </div>          
+          <div style="position: absolute; border: none; font-size: 8px; font-family: Dosis; font-weight: 600; color: #22a6dc; letter-spacing: 1px; height: 10px; top: 17px; text-align: center; width: 60px; ">
+            {{this.bottom}}
+          </div>
+        </div>
+      </div>
+      <div class="inline triangle-right"></div>              
+    </div>
+    
+    

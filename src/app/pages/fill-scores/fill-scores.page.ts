@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import * as $ from 'jquery'
 
 @Component({
   selector: 'app-fill-scores',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FillScoresPage implements OnInit {
 
+  @Input() value: string = "777";
+  @Input() bottom: string = "AIM";
+
   constructor() { }
 
   ngOnInit() {
+
   }
+
+  ionViewDidEnter() {    
+
+    //this.drawLines();
+
+  }
+
 
 }
