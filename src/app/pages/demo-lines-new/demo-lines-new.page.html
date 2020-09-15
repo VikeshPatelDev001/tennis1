@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title style="font-family: Dosis; font-weight: 600;">SCORES</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+<!-- //blue - #063a53
+//lightblue - #22a6dc
+//white - #ffffff
+//blueTextInside- #295168 -->
+
+<ion-content class="masters">
+  <div style="display: block; letter-spacing: 5px;">
+    <p style="font-family: Dosis; font-weight: 600; color: #22a6dc; font-size: 24px; text-align: center; width: 100%; ">
+      <span style="font-size: 32px;">M</span>AGNUS <span style="font-size: 32px;">J</span>OHANSSON
+    </p>
+  </div>  
+  <div style="display: block; letter-spacing: 5px;">
+    <p style="font-family: Dosis; font-weight: 500; color: #22a6dc; font-size: 18px; text-align: center; width: 100%; ">
+      03-12-2020
+    </p>
+  </div>  
+  <div style="display: block; letter-spacing: 5px; margin-top: 60px;">
+    <p style="font-family: Dosis; font-weight: 500; color: #22a6dc; text-align: center; width: 100%; ">
+      <span style="font-size: 26px; letter-spacing: 5px;">C</span>LICK FOR <span style="font-size: 24px; letter-spacing: 5px;">D</span>ATA
+    </p>
+  </div>  
+  <div style="display: block;">
+    <!-- <div style="border: 3px dashed blue; position: absolute; top: 0px; left: 0px; height: 600px; width: 360px;"></div> -->
+    <app-fill-scores id="1" bottom="AIM" value="780" style="position: absolute; top: 250px; left: 20px; width: 90px;"></app-fill-scores>
+    <app-fill-scores id="2" bottom="SIDEWAYS" value="1020" style="position: absolute; top: 250px; left: 280px; width: 90px;"></app-fill-scores>
+    <app-fill-scores-big id="3" value="820" style="position: absolute; top: 265px; left: 130px; width: 90px;"></app-fill-scores-big>
+    <app-fill-scores id="4" bottom="HEIGHT" value="640" style="position: absolute; top: 340px; left: 20px; width: 90px;"></app-fill-scores>
+    <app-fill-scores id="5" bottom="STATIONARY" value="640" style="position: absolute; top: 340px; left: 280px; width: 90px;"></app-fill-scores>
+    <canvas id="canvas" style="position: absolute; top: 250px; left: 20px; height: 600px; width: 360px; background-color: transparent"></canvas>
+  </div>
+  <div style="display: block; letter-spacing: 5px; position: absolute; top: 500px; width: 100%;  text-align: center; ">
+    <p style="font-family: Dosis; font-weight: 400; color: #22a6dc; font-size: 24px; width: 100%;">
+      <span style="font-size: 32px; text-align: center; width: 100%; ">HISTORY</span>
+    </p>
+  </div>  
+</ion-content>

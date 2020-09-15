@@ -1,0 +1,48 @@
+<style>
+  .top-bottom-borders {
+    position: absolute; 
+    border-top: 15px solid white;
+    border-bottom: 15px solid white;
+    background-color: white;
+    text-align: center;
+    line-height: 20px;
+    padding: 5px;  
+    color: #063a53;
+    left: 30px; 
+    width: 60px;
+    height: 100px; 
+  } 
+  .triangle-left {
+    position: absolute;  
+    border-top: 50px solid transparent;
+    border-right: 30px solid white;
+    border-bottom: 50px solid transparent;
+    left: 0px;
+    height: 100px;
+  }
+  .triangle-right {
+    position: absolute;  
+    border-top: 50px solid transparent;
+    border-left: 30px solid white;
+    border-bottom: 50px solid transparent;
+    left: 90px;
+    height: 100px;
+  }    
+  .inline 
+  {
+      display:inline-block;
+  }
+  </style>
+  <div>
+    <div class="inline triangle-left"></div>              
+    <div class="inline top-bottom-borders" style="position: absolute; padding: 0px; margin: 0px;">
+      <div style="position: absolute; border: none; padding: 0px; margin: 0px; height: 40px; top: 25px; left: -4px; ">
+        <div style="position: absolute; border: none; font-style: italic; font-size: 32px; font-family: Dosis; font-weight: 700; color: #295168; letter-spacing: 3px; height: 40px; ">
+          {{this.value}}
+        </div>          
+      </div>
+    </div>
+    <div class="inline triangle-right"></div>              
+  </div>
+  
+  
